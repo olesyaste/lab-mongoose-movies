@@ -12,6 +12,7 @@ router.get("/celebrities", (req, res, next) => {
   })
   .catch(err => next(err))
 })
+
 router.get("/celebrities/new", (req, res)=> {
   res.render("celebrities/new")
 })

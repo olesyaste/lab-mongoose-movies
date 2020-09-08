@@ -1,0 +1,10 @@
+<h2>Movies</h2>
+{{#each moviesList}}
+<p>
+{{ title }}
+<form action="/movies/{{_id}}/edit" method="GET">
+<button type="submit">Edit</button>
+</form>
+</p>
+{{/each}}
+<a href="/movies/new">Add a new celebrity</a>
